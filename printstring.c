@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdarg.h>
+#include "main.h"
 
 /**
  * printString - print a string of characters
@@ -15,5 +14,4 @@ int printString(va_list args)
 		str++;
 	}
 
-	/* Add a blank line after the while loop declaration */
 }

@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdarg.h>
+#include "main.h"
 /**
  * printchar - print a character
  * @args: variadic list of the function
