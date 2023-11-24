@@ -13,23 +13,21 @@ int print_integer(va_list args)
 
 	if (num < 0)
 	{
-		write(1, "-", 1);
+		count += write(1, "-", 1);
 		abs = -num;
 	}
 	if (num > 0)
 		abs = num;
 	while (abs > 0)
 	{
-		buffer[count] = (abs % 10) + '0';
+		buffer[i] = (abs % 10) + '0';
 		abs /= 10;
+		i++;
 		count++;
 	}
-	buffer[count] = '\0';
+	buffer[i] = '\0';
 	if (count == 0)
-	{
 		buffer[count++] = '0';
-	}
-	i = count;
 	while (i > 0)
 		_putchar(buffer[--i]);
 	return (count);
