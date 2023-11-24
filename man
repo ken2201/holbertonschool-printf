@@ -1,0 +1,86 @@
+root@201d98c77822:/holbertonschool-printf# ls
+a.out          main.h       printf     print_integer.c  _putchar.c
+Flowchart.png  man          _printf.c  print_percent.c  README.md
+main.c         printchar.c  printf.c   printstring.c
+root@201d98c77822:/holbertonschool-printf# git merge master
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+root@201d98c77822:/holbertonschool-printf# git pull
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+root@201d98c77822:/holbertonschool-printf# vi man
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NAME
+       _printf - formatted output to standard output
+
+SYNOPSIS
+       #include <main.h>
+
+       int _printf(const char *format, ...);
+
+DESCRIPTION
+       _printf() is a function that produces output according to a format. It is similar to the standard printf function but with limited format specifiers.
+
+       The function takes a format string and optional additional arguments, and prints the formatted output to the standard output.
+
+       The supported format specifiers are:
+       - %c: Print a character.
+       - %s: Print a string.
+       - %%: Print a percent sign.
+       - %d or %i: Print an integer.
+
+RETURN VALUE
+       The _printf function returns the number of characters printed (excluding the null byte used to end the output to strings). If an error occurs, -1 is returned. If the format string is empty ('\0'), 0 is returned.
+
+EXAMPLE
+       #include <stdio.h>
+       #include "main.h"
+
+       int main() {
+           int count;
+
+           count = _printf("Hello, %s! You have %d apples.\n", "John", 10);
+           _printf("Printed %d characters.\n", count);
+
+           return 0;
+       }
+
+SEE ALSO
+       printf(3), write(2)
+
+BUGS
+       This function has limited format specifiers compared to the standard printf.
+
+AUTHOR
+       Mascret Clément, Ken Kersy Ndayishimiye.
+
+REPORTING BUGS
+       Report bugs to 7428@holbertonstudents.com
+
+COPYRIGHT
+       This is free software; There no waranty.
