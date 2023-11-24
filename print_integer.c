@@ -8,7 +8,7 @@ int print_integer(va_list args)
 {
 	unsigned int abs;
 	int num = va_arg(args, int);
-	int count = 0;
+	int i = 0, count = 0;
 	char buffer[12];
 
 	if (num < 0)
@@ -29,11 +29,8 @@ int print_integer(va_list args)
 	{
 		buffer[count++] = '0';
 	}
-
-	while (count > 0)
-	{
-		_putchar(buffer[--count]);
-	}
-
+	i = count;
+	while (i > 0)
+		_putchar(buffer[--i]);
 	return (count);
 }
