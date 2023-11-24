@@ -26,8 +26,8 @@ int print_integer(va_list args)
 		count++;
 	}
 	buffer[i] = '\0';
-	if (count == 0)
-		buffer[count++] = '0';
+	if (num == 0)
+		count += _putchar('0');
 	while (i > 0)
 		_putchar(buffer[--i]);
 	return (count);
