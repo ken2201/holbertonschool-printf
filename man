@@ -1,39 +1,4 @@
-root@201d98c77822:/holbertonschool-printf# ls
-a.out          main.h       printf     print_integer.c  _putchar.c
-Flowchart.png  man          _printf.c  print_percent.c  README.md
-main.c         printchar.c  printf.c   printstring.c
-root@201d98c77822:/holbertonschool-printf# git merge master
-error: Merging is not possible because you have unmerged files.
-hint: Fix them up in the work tree, and then use 'git add/rm <file>'
-hint: as appropriate to mark resolution and make a commit.
-fatal: Exiting because of an unresolved conflict.
-root@201d98c77822:/holbertonschool-printf# git pull
-error: Pulling is not possible because you have unmerged files.
-hint: Fix them up in the work tree, and then use 'git add/rm <file>'
-hint: as appropriate to mark resolution and make a commit.
-fatal: Exiting because of an unresolved conflict.
-root@201d98c77822:/holbertonschool-printf# vi man
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+HolbertonSchool-printf project
 
 NAME
        _printf - formatted output to standard output
