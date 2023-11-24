@@ -3,15 +3,20 @@
 /**
  * printString - print a string of characters
  * @args: variadic list of arguments
+ * @i: the counter
+ * Return: i the counter
  */
 int printstring(va_list args)
 {
 	char *str = va_arg(args, char *);
 
-	while (*str)
+	int i = 0;
+	while (*(str + i))
 	{
-		putchar(*str);
-		str++;
+		_putchar(*str);
+		i++;
 	}
+
+	return (i);
 
 }

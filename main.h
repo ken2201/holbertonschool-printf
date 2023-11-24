@@ -18,5 +18,6 @@ int print_integer(va_list args);
 
 
 /** _printf function **/
+int _printf(const char *format, ...);
 
 #endif

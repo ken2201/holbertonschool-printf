@@ -44,7 +44,7 @@ Integer or Decimal
 
 Input:
 
-_printf("today is %i.\n", 13);
+_printf("today is %i.\n", 24);
 
 Output:
 
