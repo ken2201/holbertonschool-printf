@@ -71,7 +71,7 @@ EXAMPLE
        }
 
 SEE ALSO
-       printf(3), write(2)
+       printf(3), write(2).
 
 BUGS
        This function has limited format specifiers compared to the standard printf.
