@@ -6,6 +6,7 @@
  */
 int print_integer(va_list args)
 {
+	unsigned int abs;
 	int num = va_arg(args, int);
 	int count = 0;
 	char buffer[12];
@@ -13,12 +14,14 @@ int print_integer(va_list args)
 	if (num < 0)
 	{
 		write(1, "-", 1);
-		num = -num;
+		abs = -num;
 	}
-	while (num > 0)
+	if (num > 0)
+		abs = num;
+	while (abs > 0)
 	{
-		buffer[count] = (num % 10) + '0';
-		num /= 10;
+		buffer[count] = (abs % 10) + '0';
+		abs /= 10;
 		count++;
 	}
 	buffer[count] = '\0';
