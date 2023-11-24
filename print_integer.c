@@ -12,15 +12,16 @@ int print_integer(va_list args)
 
 	if (num < 0)
 	{
-		count += write(1, "-", 1);
+		write(1, "-", 1);
 		num = -num;
 	}
 	while (num > 0)
 	{
-		buffer[count++] = num % 10 + '0';
+		buffer[count] = (num % 10) + '0';
 		num /= 10;
+		count++;
 	}
-
+	buffer[count] = '\0';
 	if (count == 0)
 	{
 		buffer[count++] = '0';
@@ -28,7 +29,7 @@ int print_integer(va_list args)
 
 	while (count > 0)
 	{
-		write(1, &buffer[--count], 1);
+		_putchar(buffer[--count]);
 	}
 
 	return (count);
