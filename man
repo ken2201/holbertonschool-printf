@@ -83,4 +83,4 @@ REPORTING BUGS
        Report bugs to 7428@holbertonstudents.com
 
 COPYRIGHT
-       This is free software; There no waranty.
+       This is free software, There no waranty.
